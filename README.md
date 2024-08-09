@@ -21,8 +21,8 @@ Este projeto implementa um componente de preços com uma funcionalidade de alter
 
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone [https://github.com/rgdsm/pricing-component]
+   cd pricing-component
 
 Abra o Arquivo index.html:
 Você pode abrir o arquivo index.html em seu navegador para ver o componente em funcionamento.
