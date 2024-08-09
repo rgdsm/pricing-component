@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: url('/pricing-component-with-toggle-master/images/bg-bottom.svg'), url('/pricing-component-with-toggle-master/images/bg-top.svg');
+    background-position: left bottom, top right;
+    background-repeat: no-repeat, no-repeat;
+    font-weight: 700;
+    background-color: hsl(240, 78%, 98%);
+}
+
+
+.main-area {
+    height: 100vh;
+
+    text-align: center;
+
+    Font-size: 15px;
+}
+
+.title-h1{
+    color: hsl(233, 13%, 49%);
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    color: hsl(234, 14%, 74%);
+}
+
+/* Toggle Button */
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height: 20px;
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 30px;
+    border: 1px solid rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+.toggle:hover {
+    opacity: .5;
+    transition: .3s;
+}
+
+.toggle:after{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 1px;
+    left: 1px;
+    transition: all .5s;
+}
+
+.checkbox:checked + .toggle::after {
+    left: 20px;
+}
+
+
+.checkbox {
+    display: none;
+}
+
+
+/* Toggle Button */
+
+/* Boxes */
+
+.boxCard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxCard .professionalPlan {
+    margin: 20px 0;
+}
+
+.basicPlan, .masterPlan {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 40px 0;
+    padding: 20px 30px;
+}
+
+.professionalPlan {
+    background-color: green;
+    margin: 40px 0;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    border-radius: 10px;
+    margin: 40px 0;
+    padding: 20px 30px;
+}
+
+.buttonProfessional button{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid rgb(136, 134, 134);
+    cursor: pointer;
+}
+
+#buttonMoreProfessional button {
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: hsl(233, 13%, 49%);
+    border-radius: 5px;
+}
+
+.basicPlanTitle, .masterPlanTitle {
+    margin: 5px 0 30px 0;
+    color: hsl(232, 13%, 33%);
+}
+
+.professionalPlanTitle{
+    margin: 5px 0 30px 0;
+}
+
+#professionalTitle > h3, #professionalTitle > span {
+    color: #fff !important;
+}
+
+.professionalPlan p {
+    border-top: 1px solid #ffffff60 !important;
+    color: #fff;
+}
+
+.professionalPlan p:nth-last-child(1) {
+    border-bottom: 1px solid #ffffff60 !important;
+}
+
+.price-area{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;  
+    padding: 0 40px;
+    color: hsl(232, 13%, 33%);
+}
+
+.iconPrice{
+    font-size: 25px;
+    margin: 0 4px;
+}
+
+.subtitles-area {
+    padding: 30px 0;
+    color: hsl(232, 13%, 33%);
+}
+
+.subtitles-area p {
+    border-top: 1px solid rgba(136, 134, 134, .2);
+    padding: 15px 0;
+}
+
+.subtitles {
+    font-size: 15px;
+}
+
+#lastSubtitle {
+    border-bottom: 1px solid rgba(136, 134, 134, .2);
+}
+
+
+.button button{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid rgb(136, 134, 134);
+    cursor: pointer;
+}
+
+#buttonMore button {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 5px;
+}
+
+#buttonMore button:hover {
+    text-transform: uppercase;
+    color: hsl(237, 63%, 64%);
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #fff !important;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .1s;
+}
+
+#buttonMoreProfessional button:hover {
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: all .1s;
+}

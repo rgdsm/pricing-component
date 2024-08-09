@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <script src="/Scripts/script.js" defer></script>
+    <title>Frontend Mentor - Pricing component with toggle solution</title>
+  </head>
+  <body>
+    <main class="main-area">
+      <!-- Main -->
+      <div class="titles">
+        <!-- Titles -->
+
+        <div class="main-title">
+          <h1 class="title-h1">Our Pricing</h1>
+        </div>
+
+        <div class="inputs">
+          <h4 class="anualPlan">Anually</h4>
+          <!-- Input Toggle -->
+          <input type="checkbox" class="checkbox" id="switch" />
+          <label for="switch" class="toggle"></label>
+
+          <!--  -->
+          <h4 class="monthPlan">Monthly</h4>
+        </div>
+      </div>
+
+      <div class="allBoxes">
+        <!-- Boxes -->
+        <div class="boxCard">
+          <div class="basicPlan">
+            <h4 class="basicPlanTitle">Basic</h4>
+
+            <div class="basicPlanPrice">
+              <div class="price-area">
+                <span class="iconPrice">$</span>
+                <h3 class="price" id="priceBasic">199,99</h3>
+              </div>
+            </div>
+            <div class="subtitles-area">
+              <p class="subtitles">500 GB Storage</p>
+              <p class="subtitles">2 Users Allowed</p>
+              <p class="subtitles" id="lastSubtitle">Send up to 3GB</p>
+            </div>
+
+            <div class="button">
+                <a href="#" id="buttonMore"> <button type="button" class="learnMore">learn more</button></a>
+            </div>
+          </div>
+          <div class="professionalPlan">
+            <h4 class="professionalPlanTitle">Professional</h4>
+
+            <div class="professionalPlanPrice">
+              <div class="price-area" id="professionalTitle">
+                <span class="iconPrice">$</span>
+                <h3 class="price" id="priceProfessional">249,99</h3>
+              </div>
+            </div>
+            <div class="subtitles-area">
+              <p class="subtitles" >1 TB Storage</p>
+              <p class="subtitles">5 Users Allowed</p>
+              <p class="subtitles" id="lastSubtitle">Send up to 10GB</p>
+            </div>
+
+            <div class="buttonProfessional" id="professionalButton">
+                <a href="#" id="buttonMoreProfessional"> <button type="button" class="learnMoreProfessional">learn more</button></a>
+            </div>
+          </div>
+          <div class="masterPlan">
+            <h4 class="masterPlanTitle">Master</h4>
+
+            <div class="masterPlanPrice">
+              <div class="price-area">
+                <span class="iconPrice">$</span>
+                <h3 class="price" id="priceMaster">399,99</h3>
+              </div>
+            </div>
+            <div class="subtitles-area">
+              <p class="subtitles" >2 TB Storage</p>
+              <p class="subtitles">10 Users Allowed</p>
+              <p class="subtitles" id="lastSubtitle">Send up to 20GB</p>
+            </div>
+
+            <div class="button">
+                <a href="#" id="buttonMore"> <button type="button" class="learnMore">learn more</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main -->
+  </body>
+</html>
